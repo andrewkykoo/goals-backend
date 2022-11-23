@@ -3,6 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const port = process.env.PORT;
 const goalRoutes = require("./routes/goals");
+const cors = require("cors");
 
 const app = express();
 
