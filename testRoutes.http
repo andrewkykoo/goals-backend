@@ -1,0 +1,26 @@
+### get all topics
+GET http://localhost:5001/api/goals
+
+### get a topic
+GET http://localhost:5001/api/goals/
+
+### delete a topic
+DELETE http://localhost:5001/api/goals/
+
+### update a topic
+PATCH http://localhost:5001/api/goals/
+Content-Type: application/json
+
+{
+  
+}
+
+### post a topic
+POST http://localhost:5001/api/goals
+Content-Type: application/json
+
+{
+  "subject": "Europe Trip",
+  "description": "Visit London for premier league games",
+  "deadline": "2022-12-25"
+}
