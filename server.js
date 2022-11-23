@@ -6,6 +6,13 @@ const goalRoutes = require("./routes/goals");
 
 const app = express();
 
+app.use(
+  cors({
+    origin: "https://goals-08ew.onrender.com",
+    credentials: true,
+  })
+);
+
 // middleware
 app.use(express.json());
 app.use((req, res, next) => {
